@@ -140,5 +140,69 @@
 </section>
 <!-- ===== END PRICING ===== -->
 
+<!-- ===== CONTACT SECTION ===== -->
+<section class="contact" id="contact">
+    <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-sub">Have questions? We'd love to hear from you!</p>
+
+        <div class="contact-form-wrapper">
+            <form action="thankyou.php" method="POST">
+
+                <?php
+                $name_err = $email_err = $message_err = "";
+                if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                    if (empty($_POST["name"])) {
+                        $name_err = "Name is required";
+                    }
+                    if (empty($_POST["email"])) {
+                        $email_err = "Email is required";
+                    } elseif (!filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)) {
+                        $email_err = "Invalid email format";
+                    }
+                    if (empty($_POST["message"])) {
+                        $message_err = "Message is required";
+                    }
+                }
+                ?>
+
+                <!-- Name -->
+                <div class="form-group">
+                    <label>Your Name</label>
+                    <input type="text" name="name" placeholder="John Doe"
+                        value="<?php echo isset($_POST['name']) ? htmlspecialchars($_POST['name']) : ''; ?>">
+                    <?php if($name_err): ?>
+                        <span class="error"><?php echo $name_err; ?></span>
+                    <?php endif; ?>
+                </div>
+
+                <!-- Email -->
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="text" name="email" placeholder="john@example.com"
+                        value="<?php echo isset($_POST['email']) ? htmlspecialchars($_POST['email']) : ''; ?>">
+                    <?php if($email_err): ?>
+                        <span class="error"><?php echo $email_err; ?></span>
+                    <?php endif; ?>
+                </div>
+
+                <!-- Message -->
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea name="message" rows="5"
+                        placeholder="Write your message here..."><?php echo isset($_POST['message']) ? htmlspecialchars($_POST['message']) : ''; ?></textarea>
+                    <?php if($message_err): ?>
+                        <span class="error"><?php echo $message_err; ?></span>
+                    <?php endif; ?>
+                </div>
+
+                <button type="submit" class="btn-submit">Send Message</button>
+
+            </form>
+        </div>
+    </div>
+</section>
+<!-- ===== END CONTACT ===== -->
+
 </body>
 </html>
