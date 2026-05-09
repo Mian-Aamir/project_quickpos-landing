@@ -88,5 +88,57 @@
 </section>
 <!-- ===== END FEATURES ===== -->
 
+<!-- ===== PRICING SECTION ===== -->
+<section class="pricing" id="pricing">
+    <div class="container">
+        <h2 class="section-title">Simple Pricing</h2>
+        <p class="section-sub">Choose the plan that works best for your business</p>
+        <div class="pricing-grid">
+
+            <!-- Basic Plan -->
+            <div class="pricing-card">
+                <h3>Basic</h3>
+                <div class="price">$9<span>/mo</span></div>
+                <ul>
+                    <li><i class="fas fa-check"></i> 1 Register</li>
+                    <li><i class="fas fa-check"></i> Basic Reports</li>
+                    <li><i class="fas fa-check"></i> Email Support</li>
+                    <li><i class="fas fa-check"></i> 100 Products</li>
+                </ul>
+                <a href="#contact" class="btn-plan">Get Started</a>
+            </div>
+
+            <!-- Pro Plan -->
+            <div class="pricing-card popular">
+                <div class="badge">Most Popular</div>
+                <h3>Pro</h3>
+                <div class="price">$29<span>/mo</span></div>
+                <ul>
+                    <li><i class="fas fa-check"></i> 5 Registers</li>
+                    <li><i class="fas fa-check"></i> Advanced Reports</li>
+                    <li><i class="fas fa-check"></i> Priority Support</li>
+                    <li><i class="fas fa-check"></i> Unlimited Products</li>
+                </ul>
+                <a href="#contact" class="btn-plan">Get Started</a>
+            </div>
+
+            <!-- Enterprise Plan -->
+            <div class="pricing-card">
+                <h3>Enterprise</h3>
+                <div class="price">$99<span>/mo</span></div>
+                <ul>
+                    <li><i class="fas fa-check"></i> Unlimited Registers</li>
+                    <li><i class="fas fa-check"></i> Custom Reports</li>
+                    <li><i class="fas fa-check"></i> 24/7 Support</li>
+                    <li><i class="fas fa-check"></i> Custom Integration</li>
+                </ul>
+                <a href="#contact" class="btn-plan">Get Started</a>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- ===== END PRICING ===== -->
+
 </body>
 </html>
