@@ -52,5 +52,41 @@
 </section>
 <!-- ===== END HERO ===== -->
 
+<!-- ===== FEATURES SECTION ===== -->
+<section class="features" id="features">
+    <div class="container">
+        <h2 class="section-title">Why Choose QuickPOS?</h2>
+        <p class="section-sub">Everything you need to run your business smoothly</p>
+        <div class="features-grid">
+
+            <div class="feature-card">
+                <i class="fas fa-bolt"></i>
+                <h3>Lightning Fast</h3>
+                <p>Process transactions in seconds with our optimized POS engine.</p>
+            </div>
+
+            <div class="feature-card">
+                <i class="fas fa-chart-line"></i>
+                <h3>Real-Time Analytics</h3>
+                <p>Track sales, revenue and inventory with live dashboards.</p>
+            </div>
+
+            <div class="feature-card">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Works Everywhere</h3>
+                <p>Use on any device — desktop, tablet, or mobile phone.</p>
+            </div>
+
+            <div class="feature-card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Secure & Reliable</h3>
+                <p>Bank-level security keeps your data safe 24/7.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- ===== END FEATURES ===== -->
+
 </body>
 </html>
