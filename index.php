@@ -204,5 +204,48 @@
 </section>
 <!-- ===== END CONTACT ===== -->
 
+<!-- ===== FOOTER SECTION ===== -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-inner">
+
+            <!-- Logo -->
+            <div class="footer-logo">
+                <i class="fas fa-cash-register"></i>
+                <span>QuickPOS</span>
+                <p>The smartest POS system for modern businesses.</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="#hero">Home</a>
+                <a href="#features">Features</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <!-- Social Links -->
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-bottom">
+            <p>&copy; <?php echo date('Y'); ?> QuickPOS. All rights reserved.</p>
+        </div>
+
+    </div>
+</footer>
+<!-- ===== END FOOTER ===== -->
+
 </body>
 </html>
