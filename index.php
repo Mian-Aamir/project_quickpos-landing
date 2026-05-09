@@ -37,5 +37,20 @@
 </header>
 <!-- ===== END HEADER ===== -->
 
+<!-- ===== HERO SECTION ===== -->
+<section class="hero" id="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1>Run Your Business<br><span>Smarter & Faster</span></h1>
+            <p>QuickPOS is the all-in-one point of sale system that helps you manage sales, inventory, and customers — all in real time.</p>
+            <a href="#contact" class="btn-cta">Get Started Free</a>
+        </div>
+        <div class="hero-image">
+            <i class="fas fa-laptop"></i>
+        </div>
+    </div>
+</section>
+<!-- ===== END HERO ===== -->
+
 </body>
 </html>
