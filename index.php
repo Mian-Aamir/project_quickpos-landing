@@ -1,0 +1,1 @@
+<?php // QuickPOS Main File ?>
