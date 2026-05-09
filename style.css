@@ -77,3 +77,61 @@ body {
 .btn-signup:hover {
     background: #3730a3;
 }
+
+/* ===== HERO SECTION ===== */
+.hero {
+    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+    padding: 100px 0;
+    color: white;
+}
+
+.hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-content h1 {
+    font-size: 52px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 span {
+    color: #fbbf24;
+}
+
+.hero-content p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 35px;
+    opacity: 0.9;
+}
+
+.btn-cta {
+    background: #fbbf24;
+    color: #1a1a2e;
+    padding: 16px 40px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.btn-cta:hover {
+    background: #f59e0b;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+    font-size: 200px;
+    opacity: 0.3;
+}
