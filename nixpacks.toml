@@ -1,5 +1,0 @@
-[phases.setup]
-nixPkgs = ["php83", "frankenphp"]
-
-[start]
-cmd = "frankenphp run --config /app/Caddyfile"
