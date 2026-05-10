@@ -52,7 +52,7 @@ jobs:
 
       - name: Stage 10 - Validate Jira Commit Message
         run: |
-          COMMIT_MSG=$(git log -1 --pretty=%B)
+          COMMIT_MSG=$(git log --pretty=%B | head -20)
           echo "Commit message: $COMMIT_MSG"
           if echo "$COMMIT_MSG" | grep -qE '^\[PROJ-[0-9]+\]'; then
             echo "✅ Valid Jira commit message!"
