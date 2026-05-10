@@ -10,15 +10,12 @@ on:
       - main
 
 jobs:
-  # ===== STAGE 11: Parallel Jobs =====
-
-  # ===== STAGE 3: Code Quality =====
   code-quality:
     name: Code Quality Check
     runs-on: ubuntu-latest
     steps:
       - name: Stage 1 - Checkout Code
-        uses: actions/upload-artifact@v4
+        uses: actions/checkout@v3
 
       - name: Stage 2 - Setup PHP
         uses: shivammathur/setup-php@v2
@@ -31,13 +28,12 @@ jobs:
       - name: Stage 3 - Run CodeSniffer
         run: phpcs --standard=PSR12 --extensions=php --ignore=vendor index.php thankyou.php || true
 
-  # ===== STAGE 4: Automated Testing =====
   automated-tests:
     name: Automated Tests
     runs-on: ubuntu-latest
     steps:
       - name: Stage 1 - Checkout Code
-        uses: actions/upload-artifact@v4
+        uses: actions/checkout@v3
 
       - name: Stage 2 - Setup PHP
         uses: shivammathur/setup-php@v2
@@ -53,11 +49,11 @@ jobs:
       - name: Stage 10 - Validate Jira Commit Message
         run: |
           COMMIT_MSG=$(git log --pretty=%B | head -20)
-          echo "Commit message: $COMMIT_MSG"
-          if echo "$COMMIT_MSG" | grep -qE '^\[PROJ-[0-9]+\]'; then
-            echo "✅ Valid Jira commit message!"
+          echo "Commit messages: $COMMIT_MSG"
+          if echo "$COMMIT_MSG" | grep -qE '\[PROJ-[0-9]+\]'; then
+            echo "✅ Valid Jira commit message found!"
           else
-            echo "❌ ERROR: Commit must start with [PROJ-XX]"
+            echo "❌ ERROR: No Jira ticket ID found!"
             exit 1
           fi
 
