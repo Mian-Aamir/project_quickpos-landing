@@ -1,4 +1,5 @@
 [phases.setup]
-nixPkgs = ["php83", "php83Extensions.mysqli", "caddy"]
+nixPkgs = ["php83", "frankenphp"]
+
 [start]
-cmd = "php -S 0.0.0.0:$PORT -t ."
+cmd = "frankenphp run --config /app/Caddyfile"
