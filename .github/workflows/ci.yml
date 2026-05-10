@@ -47,9 +47,10 @@ jobs:
           php -l tests/FormTest.php
 
       - name: Stage 10 - Validate Jira Commit Message
+        if: github.event_name == 'push'
         run: |
-          COMMIT_MSG=$(git log --pretty=%B)
-          echo "Commit messages: $COMMIT_MSG"
+          COMMIT_MSG=$(git log -1 --pretty=%B)
+          echo "Commit message: $COMMIT_MSG"
           if echo "$COMMIT_MSG" | grep -qE '\[PROJ-[0-9]+\]'; then
             echo "✅ Valid Jira commit message found!"
           else
