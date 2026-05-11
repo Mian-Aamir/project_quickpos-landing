@@ -18,7 +18,7 @@
             <!-- Logo -->
             <div class="logo
                 <i class="fas fa-cash-register"></i>
-                <span>QuickPOS</span>
+                <span>QuickPOSNew</span>
             </div>
 
             <!-- Navigation -->
